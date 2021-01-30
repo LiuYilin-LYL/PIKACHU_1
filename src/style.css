@@ -49,6 +49,7 @@ body{
     
     animation: wave 0.5s infinite linear;
 }
+
 .eye { border:2px solid #000000;
     border-radius: 50%;
     width: 64px;
@@ -165,6 +166,25 @@ body{
     margin-left:-100px;
    border-radius: 100px;
 }
+
+@keyframes zhuan{
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(2deg);
+    }
+    66%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.down:hover{
+    animation: zhuan 1s infinite linear;
+
+ }
 .face{
     background-color: #ff0000;
     position: absolute;
